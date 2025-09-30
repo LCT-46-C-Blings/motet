@@ -96,10 +96,10 @@ func sendData(points []DataPoint, url string) {
 }
 
 func main() {
-	flagBpm := flag.String("bpm", "", "")
-	flagUterus := flag.String("uterus", "", "")
-	flagUrl := flag.String("url", "localhost:8080", "")
-	flagLoop := flag.Bool("loop", false, "")
+	flagBpm := flag.String("bpm", "", "path to bpm csv data file")
+	flagUterus := flag.String("uterus", "", "path to uterus csv data file")
+	flagUrl := flag.String("url", "localhost:8080", "defines the url to which the data will be sent")
+	flagLoop := flag.Bool("loop", false, "loop sending data")
 	flagHelp := flag.Bool("help", false, "shows this message")
 	flag.Parse()
 
